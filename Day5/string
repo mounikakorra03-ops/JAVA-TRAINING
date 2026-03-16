@@ -1,0 +1,35 @@
+public class WordReplacement {
+    public static void main(String[] args) {
+        String sentence = "We are learning JavaScript";
+        String wordToReplace = "JavaScript";
+        String replacementWord = "Java";
+      
+        System.out.println("Original sentence: " + sentence);
+
+        String replacedSentence = replaceWord(sentence, wordToReplace, replacementWord);
+        System.out.println("Replaced sentence: " + replacedSentence);
+    }
+
+    // Method to replace all occurrences of a word in a sentence
+    private static String replaceWord(String sentence, String wordToReplace, String replacementWord) {
+        // Use replaceAll() method to replace all occurrences
+        return sentence.replaceAll("\\b" + wordToReplace + "\\b", replacementWord);
+    }
+}
+
+public class rep1 {
+    public static void main(String args[])
+    {
+
+        // Initialising String
+        String Str = new String("Welcome to geeksforgeeks");
+
+        // Using replace to replace characters
+        System.out.print("After replacing all o with T : ");
+        System.out.println(Str.replace('o', 'T'));
+
+        // Using replace to replace characters
+        System.out.print("After replacing all e with D : ");
+        System.out.println(Str.replace('e', 'D'));
+    }
+}
